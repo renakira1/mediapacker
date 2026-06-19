@@ -1,0 +1,27 @@
+# Ensure consistent line endings across platforms.
+# Developers on Windows will get CRLF locally; the repo stores LF.
+* text=auto
+
+# Force LF for source files regardless of OS
+*.py    text eol=lf
+*.html  text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.spec  text eol=lf
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.sh    text eol=lf
+
+# Treat compiled binaries as binary (no line-ending conversion, no diff)
+dist/MediaPacker    binary
+dist/MediaPacker.exe binary
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.mp4   binary
+*.mov   binary
+*.webm  binary

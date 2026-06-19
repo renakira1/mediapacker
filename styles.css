@@ -1,0 +1,36 @@
+/* Custom Scrollbar for premium theme */
+:root {
+  --bg-scrollbar-track: #f4f4f5;
+  --bg-scrollbar-thumb: #e4e4e7;
+  --bg-scrollbar-thumb-hover: #d4d4d8;
+}
+html.dark {
+  --bg-scrollbar-track: #09090b;
+  --bg-scrollbar-thumb: #27272a;
+  --bg-scrollbar-thumb-hover: #3f3f46;
+}
+
+/* Prevent card splitting inside masonry columns */
+.masonry-card {
+  break-inside: avoid;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-scrollbar-thumb-hover);
+}
+
+/* Glow animations */
+.glow-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
